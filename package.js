@@ -7,9 +7,9 @@ Package.describe({
 
 
 Package.onUse(function (api) {
-    api.versionsFrom('0.9.3');
+    api.versionsFrom('1.6.1');
 
-    api.use(['meteor', 'coffeescript']);
+    api.use(['meteor', 'coffeescript@2.0.0']);
 
     api.addFiles(['chai-2.1.0.js', 'chai-string-1.1.1.js', 'config.coffee', 'exports.js']);
 
@@ -18,7 +18,7 @@ Package.onUse(function (api) {
 
 
 Package.onTest(function(api) {
-    api.use(['practicalmeteor:chai', 'coffeescript', 'tinytest', 'test-helpers']);
+    api.use(['practicalmeteor:chai', 'coffeescript@2.0.0', 'tinytest', 'test-helpers']);
 
     api.addFiles(['tests/chai.coffee']);
 });
